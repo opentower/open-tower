@@ -1,0 +1,128 @@
+html { overflow-y: scroll; }
+
+body { margin: 0; height: 100%; }
+
+@font-face {
+    font-family: typekeys;
+    src: url("Type Keys Filled.ttf")
+}
+
+@font-face {
+    font-family: cinzel;
+    src: url(embed.otf);
+}
+
+@font-face {
+    font-family: street;
+    src: url(Streetvertising.ttf);
+}
+
+#sidebar {
+    position: fixed;
+    float: left;
+    background-color: #D3D3D3;
+    height: 100%;
+    width: 375;
+    text-align: center;
+    margin: 0;
+    border-right: 1px solid #888888;
+    box-shadow: 3px 0px 3px #888888;
+}
+
+.title { font-family: street; font-size: 4em; margin: 0; padding: 30 0 0 0; }
+
+#menu {
+    height: 300;
+    position: relative;
+    top: 80;
+}
+
+#button1 { position: absolute; margin-left: auto; margin-right: auto; left: 0; right: 150; top: 16; text-align: center; }
+#button2 { position: absolute; margin-left: auto; margin-right: auto; left: 150; right: 0; top: 16; text-align: center; }
+#button3 { position: absolute; margin-left: auto; margin-right: auto; left: 0; right: 150; top: 226; text-align: center; }
+#button4 { position: absolute; margin-left: auto; margin-right: auto; left: 150; right: 0; top: 226; text-align: center; }
+
+.button1 {
+    transform: rotate(-27deg);
+    width: 125px;
+    background-color: #000000;
+    font-family: "georgia";
+    color: #FFFFFF;
+    font-size: 1.1em;
+    font-variant: small-caps;
+    border: 1;
+    border-color: #D3D3D3;
+    cursor: pointer
+}
+
+.button2 {
+    transform: rotate(27deg);
+    width: 125px;
+    background-color: #000000;
+    font-family: "georgia";
+    color: #FFFFFF;
+    font-size: 1.1em;
+    font-variant: small-caps;
+    border: 1;
+    border-color: #D3D3D3;
+    cursor: pointer
+}
+
+button:focus { outline:0; }
+
+#logo { position: absolute; margin-left: auto; margin-right: auto; left: 0; right: 0; text-align: center; }
+
+#footer { position: absolute; margin-left: auto; margin-right: auto; left: 0; right: 0; top: 95%; font-size: .8em; }
+
+#page {
+    position: fixed;
+    overflow-y: auto;
+    overflow: visible;
+    max-height: 100%;
+    top: 50%;
+    left: 380;
+    right: 0;
+    transform: translateY(-50%);
+    font-family: "georgia";
+    letter-spacing: .2px;
+    background-color: #FFFFFF;
+    color: #000000;
+    font-size: 1.1em;
+    line-height: 1.3em;
+    word-wrap: break-word;
+    padding: 0 125 0 120;
+    margin: 0 0 100 0;
+    text-align: center;
+}
+
+.fixed-content {
+    top: 0;
+    bottom:0;
+    position:fixed;
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+
+.txt { margin:0 0 1.25em 0; text-align: justify; }
+
+.carnap { font-family: "Segoe UI"; font-size:2.5em; font-weight:300; margin:0 0 10px 0; text-align: justify; }
+.margy { font-family: "typekeys"; font-size:3em; margin:0 0 10px 0; text-align: justify; }
+.populus { font-family: "cinzel"; font-size:2.5em; margin:0 0 10px 0; text-align: justify; }
+.pt { font-family: "century gothic"; font-size:2em; font-weight: bold; margin:0 0 10px 0; text-align: justify; }
+.info { font-size: .8em; font-style: italic; padding:0 0 50px 5px; text-align: justify; }
+
+.credits { margin: 0 0 1em 0; }
+.spaced { margin: 0 0 1.3em 0; }
+.lspaced { margin: 0 0 .2em 0; }
+.street { font-family: street; }
+
+.b { font-weight: bold; }
+.u { text-decoration: underline; }
+.i { font-style: italic; }
+
+a:visited { color: #0000FF; text-decoration: none; }
+a:link { color: #0000FF; text-decoration: none; }
+a:hover { color: #0000FF; text-decoration: none; }
+a:active { color: #FF0000; text-decoration: none; }
+
+a.black { color: #000000; }
