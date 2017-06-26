@@ -17,6 +17,12 @@ body { margin: 0; height: 100%; }
     src: url(Streetvertising.ttf);
 }
 
+@font-face {
+    font-family: port;
+    src: url(PortculliardInitials.ttf);
+}
+
+
 #sidebar {
     position: fixed;
     float: left;
@@ -115,6 +121,7 @@ button:focus { outline:0; }
 .spaced { margin: 0 0 1.3em 0; }
 .lspaced { margin: 0 0 .2em 0; }
 .street { font-family: street; }
+.port { font-family: port; }
 
 .b { font-weight: bold; }
 .u { text-decoration: underline; }
