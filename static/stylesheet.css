@@ -1,6 +1,6 @@
-html { overflow-y: scroll; }
+html { overflow-y: scroll; height: 100%; }
 
-body { margin: 0; height: 100%; }
+body { margin: 0; height: 100%; background-color: #F8F8F8; }
 
 @font-face {
     font-family: typekeys;
@@ -26,39 +26,40 @@ body { margin: 0; height: 100%; }
 #sidebar {
     position: fixed;
     float: left;
-    background-color: #D3D3D3;
+    background-color: #D6D6F5;
     height: 100%;
-    width: 375;
+    width: 375px;
     text-align: center;
     margin: 0;
     border-right: 1px solid #888888;
     box-shadow: 3px 0px 3px #888888;
 }
 
-.title { font-family: street; font-size: 4em; margin: 0; padding: 30 0 0 0; }
+.title { font-family: street; font-size: 4em; margin: 0; padding: 30px 0 0 0; }
+.logo { height: 250px; width: 250px; }
 
 #menu {
-    height: 300;
+    height: 300px;
     position: relative;
-    top: 80;
+    top: 80px;
 }
 
-#button1 { position: absolute; margin-left: auto; margin-right: auto; left: 0; right: 150; top: 16; text-align: center; }
-#button2 { position: absolute; margin-left: auto; margin-right: auto; left: 150; right: 0; top: 16; text-align: center; }
-#button3 { position: absolute; margin-left: auto; margin-right: auto; left: 0; right: 150; top: 226; text-align: center; }
-#button4 { position: absolute; margin-left: auto; margin-right: auto; left: 150; right: 0; top: 226; text-align: center; }
+#button1 { position: absolute; margin-left: auto; margin-right: auto; left: 0; right: 150px; top: 15px; text-align: center; }
+#button2 { position: absolute; margin-left: auto; margin-right: auto; left: 150px; right: 0; top: 15px; text-align: center; }
+#button3 { position: absolute; margin-left: auto; margin-right: auto; left: 0; right: 150px; top: 210px; text-align: center; }
+#button4 { position: absolute; margin-left: auto; margin-right: auto; left: 150px; right: 0; top: 210px; text-align: center; }
 
 .button1 {
     transform: rotate(-27deg);
     width: 125px;
     background-color: #000000;
     font-family: "georgia";
-    color: #FFFFFF;
+    color: #F8F8F8;
     font-size: 1.1em;
     font-variant: small-caps;
     border: 1;
-    border-color: #D3D3D3;
-    cursor: pointer
+    border-color: #D6D6F5;
+    cursor: pointer;
 }
 
 .button2 {
@@ -66,15 +67,15 @@ body { margin: 0; height: 100%; }
     width: 125px;
     background-color: #000000;
     font-family: "georgia";
-    color: #FFFFFF;
+    color: #F8F8F8;
     font-size: 1.1em;
     font-variant: small-caps;
     border: 1;
-    border-color: #D3D3D3;
-    cursor: pointer
+    border-color: #D6D6F5;
+    cursor: pointer;
 }
 
-button:focus { outline:0; }
+button:focus { outline: 0; }
 
 #logo { position: absolute; margin-left: auto; margin-right: auto; left: 0; right: 0; text-align: center; }
 
@@ -86,18 +87,18 @@ button:focus { outline:0; }
     overflow: visible;
     max-height: 100%;
     top: 50%;
-    left: 380;
+    left: 380px;
     right: 0;
     transform: translateY(-50%);
     font-family: "georgia";
     letter-spacing: .2px;
-    background-color: #FFFFFF;
+    background-color: #F8F8F8;
     color: #000000;
     font-size: 1.1em;
     line-height: 1.3em;
     word-wrap: break-word;
-    padding: 0 125 0 120;
-    margin: 0 0 100 0;
+    padding: 0 125px 0 120px;
+    margin: 0 0 100px 0;
     text-align: center;
 }
 
@@ -109,12 +110,13 @@ button:focus { outline:0; }
     overflow-x:hidden;
 }
 
+.head { margin:0 0 1em 0; font-variant: small-caps; font-size: 1.25em; }
 .txt { margin:0 0 1.25em 0; text-align: justify; }
 
-.carnap { font-family: "Segoe UI"; font-size:2.5em; font-weight:300; margin:0 0 10px 0; text-align: justify; }
-.margy { font-family: "typekeys"; font-size:3em; margin:0 0 10px 0; text-align: justify; }
-.populus { font-family: "cinzel"; font-size:2.5em; margin:0 0 10px 0; text-align: justify; }
-.pt { font-family: "century gothic"; font-size:2em; font-weight: bold; margin:0 0 10px 0; text-align: justify; }
+.carnap { font-family: "Segoe UI"; font-size:2.5em; font-weight:300; margin:0 0 20px 0; text-align: justify; }
+.margy { font-family: "typekeys"; font-size:3em; margin:0 0 20px 0; text-align: justify; }
+.populus { font-family: "cinzel"; font-size:2.5em; margin:0 0 20px 0; text-align: justify; }
+.pt { font-family: "century gothic"; font-size:2em; font-weight: bold; margin:0 0 20px 0; text-align: justify; }
 .info { font-size: .8em; font-style: italic; padding:0 0 50px 5px; text-align: justify; }
 
 .credits { margin: 0 0 1em 0; }
@@ -127,9 +129,52 @@ button:focus { outline:0; }
 .u { text-decoration: underline; }
 .i { font-style: italic; }
 
-a:visited { color: #0000FF; text-decoration: none; }
-a:link { color: #0000FF; text-decoration: none; }
-a:hover { color: #0000FF; text-decoration: none; }
-a:active { color: #FF0000; text-decoration: none; }
+a:visited {
+    color: #000000;
+    text-decoration: none;
+    background-image: linear-gradient(to top,
+        rgba(173,173,235,0) 5%,
+        rgba(173,173,235,1) 5%,
+        rgba(173,173,235,1) 10%,
+        rgba(173,173,235,0) 10%
+  );
+}
 
-a.black { color: #000000; }
+a:link {
+    color: #000000;
+    text-decoration: none;
+    background-image: linear-gradient(to top,
+        rgba(173,173,235,0) 5%,
+        rgba(173,173,235,1) 5%,
+        rgba(173,173,235,1) 10%,
+        rgba(173,173,235,0) 10%
+  );
+}
+
+a:hover {
+    color: #000000;
+    text-decoration: none;
+    background-image: linear-gradient(to top,
+        rgba(230,92,0,0) 5%,
+        rgba(230,92,0,1) 5%,
+        rgba(230,92,0,1) 10%,
+        rgba(230,92,0,0) 10%
+  );
+}
+
+a:active { color: #000000; text-decoration: none; }
+
+a {
+  text-decoration: none;
+  background-image: linear-gradient(to top,
+    rgba(173,173,235,0) 5%,
+    rgba(173,173,235,1) 5%,
+    rgba(173,173,235,1) 10%,
+    rgba(173,173,235,0) 10%
+    );
+}
+
+a.name { color: #000000; text-decoration: none; background-image: none; }
+
+a.black { color: #000000; text-decoration: none; background-image: none; }
+a:active.black { color: #E65C00; text-decoration: none; background-image: none; }

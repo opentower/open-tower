@@ -1,12 +1,13 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
 <title>Open Tower</title>
-<link rel="canonical" href="">
+<link rel="canonical" href="https://open-tower.com">
 <link rel="icon" href="{{ url_for('static', filename='otlogo.png') }}">
 <meta property="og:title" content="Open Tower">
-<meta property="og:description" content="Open Source Technology for a Better Academy">
-<meta property="og:image" content="{{ url_for('static', filename='ottrans.png') }}" />
-<meta property="og:url" content="" />
+<meta property="og:description" content="Open Source Technology for a More Trans­par­ent, In­clu­sive and Empowered Academy">
+<meta property="og:image" content="https://open-tower.com/static/otlogosmall.png" />
+<meta property="og:url" content="https://open-tower.com" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
 {% if request.MOBILE %}
@@ -21,6 +22,12 @@ $(function() {
         $( ".menu" ).slideToggle( "fast" );
     });
 });
+</script>
+
+<script>
+function highlight(button) {
+    $ ( '#' + button ).css('border-color', '#FFA366')
+}
 </script>
 </head>
 
@@ -41,19 +48,19 @@ $(function() {
     <table class=titlebar>
     <tr>
         <td class=title>Open</td>
-        <td class=title><img src="static/otlogo.png" height="250px" width="250px"></td>
+        <td class=title><img class=logo src="static/otlogo.png" alt="OTLOGO.PNG"></td>
         <td class=title>Tower</td>
     </tr>
     </table>
 {% else %}
     <div id=sidebar>
-        <div class=title>Open<br>Tower</div>
+        <div class=title><a class=name href="/">Open<br>Tower</a></div>
         <div id=menu>
-            <div id=logo><img src="static/otlogo.png" height="270px" width="270px"></div>
-            <div id=button1><button class=button1 onclick="window.location='/';">Home</button></div>
-            <div id=button2><button class=button2 onclick="window.location='/projects';">Projects</button></div>
-            <div id=button3><button class=button2 onclick="window.location='/mission';">Mission</button></div>
-            <div id=button4><button class=button1 onclick="window.location='/credits';">Credits</button></div>
+            <div id=logo><img class=logo src="static/otlogo.png" alt="OTLOGO.PNG"></div>
+            <div id=button1><button id=1 class=button1 onclick="window.location='/';">Home</button></div>
+            <div id=button2><button id=2 class=button2 onclick="window.location='/projects';">Projects</button></div>
+            <div id=button3><button id=3 class=button2 onclick="window.location='/mission';">Mission</button></div>
+            <div id=button4><button id=4 class=button1 onclick="window.location='/credits';">Credits</button></div>
         </div>
         <div id=footer>&copy; Copyright 2017 David Faraci &amp; Graham Leach-Krouse</div>
     </div>
